@@ -89,7 +89,7 @@ public class Kernel {
 		int maxY = 0;
 		
 		// Se as posições estão dentro do tabuleiro
-		if (xo < 0 || xo > SIZE || yo < 0 || yo > SIZE || xf < 0 || xf > SIZE || yf < 0 || yf > SIZE) {
+		if (xo < 0 || xo >= SIZE || yo < 0 || yo >= SIZE || xf < 0 || xf >= SIZE || yf < 0 || yf >= SIZE) {
 			return false;
 		}
 		
@@ -132,6 +132,10 @@ public class Kernel {
 			}
 		}
 
+	}
+	
+	public int getBoardPos(int x, int y) {
+		return board[x][y];
 	}
 	
 	public boolean shoot(String position) {
