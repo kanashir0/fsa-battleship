@@ -7,13 +7,12 @@ The Battleship game is a strategy type guessing game for two players. It is play
 ## The Jamaican Battleship Game
 This game is a different implementation of the commom battleship game, in this game we have 5 ships from 6 to 2 of size.
 
-To initialize the game run `br/fsa/gui/Main.java`, and you will get the intro.
-&nbsp;
-![](images/battleship-intro.png)
-&nbsp;
-And now you can play it!
-![](images/battleship-board.png)
-&nbsp;
+To initialize the game run `br/fsa/gui/Main.java`, and you will get the intro.  
+  
+![](images/battleship-intro.PNG)  
+And now you can play it!  
+  
+![](images/battleship-board.PNG)  
 
 ## References
 - [Wikipedia](encurtador.com.br/euDK9)
