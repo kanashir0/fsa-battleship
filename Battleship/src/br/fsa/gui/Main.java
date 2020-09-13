@@ -33,7 +33,7 @@ public class Main {
 					System.out.print("Ship ID: ");
 					int shipType = scan.nextInt();
 					
-					System.out.print("First coordinate (Example: A3):");
+					System.out.print("First coordinate (Example: A3): ");
 					cmd = scan.next();
 					pos = cmd.toCharArray();
 					
@@ -62,7 +62,7 @@ public class Main {
 					
 					int yo = Integer.parseInt(String.valueOf(pos[1]));
 					
-					System.out.print("Second coordinate (Example: A3):");
+					System.out.print("Second coordinate (Example: A3): ");
 					cmd = scan.next();
 					pos = cmd.toCharArray();
 					switch(Character.toLowerCase(pos[0])) {
@@ -88,7 +88,7 @@ public class Main {
 						xf = 9;
 				}
 
-					int yf = Character.getNumericValue(pos[1]);
+					int yf = Integer.parseInt(String.valueOf(pos[1]));
 					
 					if(game.validateShip(xo, yo, xf, yf, shipType)) {
 						count++;
